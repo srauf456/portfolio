@@ -1,0 +1,395 @@
+
+.main{
+     display: flex;
+    height: 100vh;
+    margin: 0px;
+    flex: 1;
+}
+#hero-header{
+    background-color: #040a5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    width: 40%;
+
+    
+   
+}
+
+a{
+    color: white;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.intro{
+   width: 100%;
+   color: #faf8f6;
+   text-align: center;
+   margin-top: 20px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.intro-two{
+    width: 80%;
+    color: #DAC0A3;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ }
+
+ #about{
+        
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin-left: 40%; /* it starts after #hero-header */
+    padding: 20px;
+    height: 100vh; /* Full height*/
+}
+
+ .resume-intro{
+    color: #040a5c;
+ }
+
+.profile-img{
+    height: auto;
+    border-radius: 50px;
+    margin-bottom:50px;
+    margin-top: 70px;
+    max-width: 150px;
+    
+    
+}
+
+.homelinks{
+    gap: 15px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: fixed;
+    background-color: #040a5c;
+    width: 40%;
+    margin-bottom: 20px;
+    background: #AAB396; /* Card background */
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+#myfooter{
+    color: white;
+    background-color: #AAB396;
+}
+#features{
+    background-color: #F7EED3;
+}
+
+#resume {
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 42%;
+    min-height: 100vh;
+}
+
+#about{
+    background-color: #fbfbfb;
+}
+
+ #projects{
+    background-color: #fdfdfd;
+    margin-left: 42%;
+   padding: 20px;
+    width: 50%;
+    min-height: 100vh;
+
+} 
+
+.childitems{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.childitems div {
+    background: #fff; /* Card background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+}
+
+.form-bg{
+    background: #fff; /* Card background */
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    height: 20px;
+   
+}
+   /* @media (max-width: 950px){
+    #hero-header{
+        width: 35%;
+    }
+    .homelinks{
+        display: flex;
+                justify-content: space-evenly;
+                gap: 16px;
+                width: inherit;
+    }
+    }  */
+    @media (min-width: 319px) and (max-width: 668px){
+        #hero-header{
+        position: fixed; /* Keeps it fixed when scrolling */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh; /* Adjust height as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #040a5c;
+        z-index: 1000; /* Ensures it stays above other content */
+        padding-top: 20px;
+        }
+        .profile-img{
+            max-width: 100px;
+         }
+         .intro-two, .intro{
+      
+            margin: 0px;
+        }
+
+        #about{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+            min-height: auto;
+            margin-top: 50vh;
+            font-size: 17px;
+        }
+
+        #resume{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+            min-height: auto;
+            margin-top: 50vh;
+            font-size: 17px;
+        }
+        #myfooter{
+            width: 100%;
+        }
+         #projects{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+            min-height: auto;
+            margin-top: 50vh;
+            font-size: 17px;
+        } 
+    }
+
+    @media (min-width: 414px) and (max-width: 896px){
+        #about{
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-left: 0;
+            padding: 20px;
+            min-height: auto;
+            margin-top: 50vh;
+
+            
+        }
+        #myfooter{
+            width: 100%;
+        }
+
+        #hero-header{
+            position: fixed; /* Keeps it fixed when scrolling */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh; /* Adjust height as needed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #040a5c;
+            z-index: 1000; /* Ensures it stays above other content */
+            padding-top: 20px;
+            }
+            #resume{
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        min-height: auto;
+        margin-top: 50vh;
+        font-size: 17px;
+            }
+            #projects{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                margin-left: 0;
+                padding: 20px;
+                min-height: auto;
+                margin-top: 50vh;
+                font-size: 17px;
+            } 
+            .childitems{
+                display: grid;
+                grid-auto-rows: auto;
+                grid-gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+    /* @media (min-width: 319px) and (max-width: 940px){
+        #hero-header{
+            display: inline;
+            height: 50vh;
+            width: 100%;
+        }
+
+      } */
+
+@media (max-width: 915px){
+     /* #hero-header{
+        
+        display: inline;
+        height: 50vh;
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+        position: fixed;
+    }  */
+/* .profile-img{
+        max-width: 120px;
+     }  */
+    /* .homelinks{
+        gap: 30px;
+        color: white;
+        background-color: #040a5c;
+        width: 98%;
+    }
+
+     
+     .intro-two{
+      
+         margin: 10px 40px 0px 40px;
+     }
+    #resume{
+        
+         display: flex; 
+        width: 60%;
+        position: relative;
+        /* flex-direction: row; */
+        /* width: fit-content; */
+        /* padding-top: 0; */
+        /* text-align: center; */
+        /* float: right;
+        padding-left: 40px; */
+    }
+
+     /* #about{
+        
+        display: inline; 
+        width: 60%;
+        padding-top: 0;
+        float: right;
+        padding-left: 40px;
+    }  */
+    #features{
+    
+    /* display: flex; */
+    width: 60%;
+    position: relative;
+    /* flex-direction: row; */
+    /* width: fit-content; */
+    padding-top: 0;
+    /* text-align: center; */
+    float: right;
+}
+#myfooter{
+   
+    /* display: flex; */
+    width: 100%;
+    /* position: relative; */
+    /* flex-direction: row; */
+    /* width: fit-content; */
+    padding-top: 0;
+    /* text-align: center; */
+    /* float: right; */
+}
+/* #projects{
+    
+    display: flex;
+    width: 60%;
+    position: relative; */
+    /* padding-top: 0;
+    float: right;
+} */
+
+/*RESPONSIVENESS*/
+/* @media (min-width:1601px){
+    body{
+   background-color: seagreen;
+    }
+  }
+
+  @media (min-width: 319px) and (max-width: 480px){
+    body{
+    background-color: lightsalmon;
+    }
+  }
+
+  @media (min-width: 481px) and (max-width: 1200px){
+    body{
+    background-color: powderblue;
+    }
+  }
+
+  @media (min-width: 1201px) and (max-width: 1600px){
+    body{
+    background-color: limegreen;
+    }
+  }
+   */
