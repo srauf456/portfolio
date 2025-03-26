@@ -34,7 +34,7 @@ a{
    width: 100%;
    color: #faf8f6;
    text-align: center;
-   margin-top: 20px;
+   margin-top: 0px;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -105,6 +105,26 @@ a{
     min-height: 100vh;
 }
 
+.contact-card {
+    width: 50%;
+    
+    
+    
+    margin-left: 42%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .card-form{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 500px; /* Adjust as needed */
+  }
+
 #about{
     background-color: #fbfbfb;
 }
@@ -140,8 +160,9 @@ a{
     padding: 10px;
     border-radius: 18px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    height: 20px;
-   
+    height: 500px;
+   width: 100%;
+
 }
    /* @media (max-width: 950px){
     #hero-header{
@@ -200,6 +221,26 @@ a{
             margin-top: 50vh;
             font-size: 17px;
         }
+
+        .contact-card {
+            width: 100%;
+            font-size: 17px;
+            margin-top: 50vh;
+            min-height: auto;
+            margin-left: 0; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+          }
+        
+          .card-form{
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            height: auto; /* Adjust as needed */
+          }
         #myfooter{
             width: 100%;
         }
@@ -215,6 +256,9 @@ a{
             margin-top: 50vh;
             font-size: 17px;
         } 
+        .homelinks{
+            width: 100%;
+        }
     }
 
     @media (min-width: 414px) and (max-width: 896px){
@@ -249,6 +293,11 @@ a{
             z-index: 1000; /* Ensures it stays above other content */
             padding-top: 20px;
             }
+
+            .homelinks{
+                width: 100%;
+                top:0;
+            }
             #resume{
             display: flex;
         align-items: center;
@@ -260,6 +309,26 @@ a{
         margin-top: 50vh;
         font-size: 17px;
             }
+
+            .contact-card {
+                width: 100%;
+                font-size: 17px;
+                margin-top: 50vh;
+                min-height: auto;
+                margin-left: 0; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 100vh;
+              }
+            
+              .card-form{
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                height: auto; /* Adjust as needed */
+              }
             #projects{
                 display: flex;
                 flex-direction: column;
