@@ -60,7 +60,7 @@ a{
 }
 
  .resume-intro{
-    color: #040a5c;
+    color: #020530;
  }
 
 .profile-img{
@@ -79,7 +79,7 @@ a{
     color: white;
     justify-content: center;
     position: fixed;
-    background-color: #040a5c;
+    background-color: #020530;
     width: 40%;
     margin-bottom: 20px;
     background: #5e6156; /* Card background */
@@ -89,7 +89,7 @@ a{
 
 #myfooter{
     color: white;
-    background-color: #AAB396;
+    background-color: #5e6156;
 }
 #features{
     background-color: #F7EED3;
